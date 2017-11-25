@@ -27,3 +27,10 @@ func TestDivZero(t *testing.T) {
                t.Error("cannot pass")
        }
 }
+
+func TestMul(t *testing.T) {
+       result := Mul(4, 2)
+       if result != 8 {
+			   t.Errorf("should be 8 but %d", result)
+	   }
+}
